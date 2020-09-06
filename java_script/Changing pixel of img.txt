@@ -1,0 +1,18 @@
+
+
+var img = new SimpleImage("duke_blue_devil.png");
+print(img.getHeight());
+print(img.getWidth());
+
+for(var value of img.values())
+{
+    if(value.getGreen()==255 && value.getBlue()==255 && value.getRed()==255)
+    {value.setGreen(0);
+    value.setBlue(0);
+    }
+}
+
+
+print(img);
+
+
